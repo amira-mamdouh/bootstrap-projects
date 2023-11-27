@@ -1,0 +1,127 @@
+.nav-img {
+  height: 20px;
+  width: 100%;
+  display: block;
+}
+
+.navbar-brand {
+  width: 30px;
+  height: 30px;
+  color: #fdca08;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 5px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fdca08;
+  transition: 0.5s all;
+}
+
+.navbar-nav .nav-item:hover .nav-link:after,
+.navbar-nav .nav-link.active:after {
+  width: 100%;
+}
+
+.home {
+  background-image: url(../images/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  max-width: 50px;
+}
+
+h1 span {
+  color: #cd8383;
+}
+
+.description h2 {
+  color: #f2ce42;
+}
+
+.header-description {
+  background-image: url(../images/sep.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Sections */
+
+section,
+.contact {
+  padding: 5rem 0;
+}
+
+.badge {
+  top: 15px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.header-description button {
+  right: 0;
+  top: 25%;
+}
+
+.contact {
+  background-image: linear-gradient(
+      rgba(16, 59, 84, 0.5),
+      rgba(16, 59, 84, 0.5)
+    ),
+    url(../images/contactus.jpg);
+  background-position: center center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #fff;
+}
+
+form {
+  border: 1px solid #fdca08;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #fdca08;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.125rem #fdca08;
+}
+
+#contact {
+  padding: 0;
+  padding-bottom: 8px;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+.pay img {
+  width: 60px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.footer-input {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+}
