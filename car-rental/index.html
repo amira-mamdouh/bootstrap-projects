@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/logo.fa.png" type="image/x-icon" />
+    <title>Car Rentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Start Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/logo.png"
+            alt="Logo"
+            width="180"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase text-white active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#cars"
+                >Cars</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#team"
+                >team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#blog"
+                >blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#contact"
+                >contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="#">pages</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Home -->
+    <header id="home">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-lg-7">
+            <div
+              class="heading h-100 d-flex flex-column justify-content-lg-center text-white pt-5"
+            >
+              <span class="text-uppercase fs-5"
+                >the royal essence of journey</span
+              >
+              <h2 class="text-uppercase my-3 display-6 fw-bold">
+                relaxed journey ever
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                voluptas praesentium in sint itaque nostrum quas distinctio,
+                odit hic.
+              </p>
+              <button
+                type="submit"
+                class="btn btn-warning text-white rounded-0 border-0"
+              >
+                RENT CAR NOW
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="form my-5 p-5">
+              <form>
+                <p class="text-white fs-5">Book Your Car Today!</p>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Select Your Car"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Pickup</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Date & time"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Drop off</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Date & time"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-warning text-white w-100"
+                    >
+                      Confirm Car Booking
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Home -->
+    <!-- Start Services -->
+    <section id="services">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <h3 class="fw-bold fs-2">What Services We offer to our clients</h3>
+          <p>Who are in extremely love with eco friendly system?</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="cards px-4 py-5 rounded-3">
+              <div class="card-heading d-flex align-items-center">
+                <img src="./images/icons/ico1.jpg" alt="" />
+                <h4 class="ms-2">Expert Technicians</h4>
+              </div>
+              <p>
+                usage of the internet is becoming more comman due to rapid
+                advancement of thechnology and power.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="cards px-4 py-5 rounded-3">
+              <div class="card-heading d-flex align-items-center">
+                <img src="./images/icons/ico1.jpg" alt="" />
+                <h4 class="ms-2">Expert Technicians</h4>
+              </div>
+              <p>
+                usage of the internet is becoming more comman due to rapid
+                advancement of thechnology and power.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="cards px-4 py-5 rounded-3">
+              <div class="card-heading d-flex align-items-center">
+                <img src="./images/icons/ico1.jpg" alt="" />
+                <h4 class="ms-2">Expert Technicians</h4>
+              </div>
+              <p>
+                usage of the internet is becoming more comman due to rapid
+                advancement of thechnology and power.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="cards px-4 py-5 rounded-3">
+              <div class="card-heading d-flex align-items-center">
+                <img src="./images/icons/ico1.jpg" alt="" />
+                <h4 class="ms-2">Expert Technicians</h4>
+              </div>
+              <p>
+                usage of the internet is becoming more comman due to rapid
+                advancement of thechnology and power.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="cards px-4 py-5 rounded-3">
+              <div class="card-heading d-flex align-items-center">
+                <img src="./images/icons/ico1.jpg" alt="" />
+                <h4 class="ms-2">Expert Technicians</h4>
+              </div>
+              <p>
+                usage of the internet is becoming more comman due to rapid
+                advancement of thechnology and power.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="cards px-4 py-5 rounded-3">
+              <div class="card-heading d-flex align-items-center">
+                <img src="./images/icons/ico1.jpg" alt="" />
+                <h4 class="ms-2">Expert Technicians</h4>
+              </div>
+              <p>
+                usage of the internet is becoming more comman due to rapid
+                advancement of thechnology and power.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start About -->
+    <section id="about">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <img class="w-100" src="./images/about-img.jpg" alt="" />
+          </div>
+          <div class="col-lg-5">
+            <div class="h-100 d-flex align-items-center">
+              <div>
+                <h3 class="fw-bold fs-1">
+                  Globally Connected by Large Network
+                </h3>
+                <h4 class="fs-6">
+                  We are here to listen from you deliver exellence
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Reprehenderit similique autem incidunt iusto asperiores ipsa
+                  quo nostrum corporis blanditiis qui. At, sunt beatae. Iusto
+                  praesentium ipsam labore dolorem! Dolorum, corrupti repellat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- Start Cars -->
+    <section id="cars">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <h3 class="fw-bold fs-2">Choose Your Desired Car Model</h3>
+          <p>Who are in extremely love with eco friendly system?</p>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner mb-4">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="cars-content h-100 py-5">
+                    <div>
+                      <h5
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        Audi 3000 msi
+                        <span class="text-warning"
+                          ><span class="fs-3">$149</span>/day</span
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Adipisci, at! Eligendi in neque sed delectus ab cum
+                        libero itaque.
+                      </p>
+                      <ul class="cars-list list-unstyled">
+                        <li>
+                          <span class="fw-bold">Capacity: </span>04 Person
+                        </li>
+                        <li><span class="fw-bold">Doors: </span>04</li>
+                        <li>
+                          <span class="fw-bold">Air condition: </span>Dual Zone
+                        </li>
+                        <li>
+                          <span class="fw-bold">Transmission: </span>Automatic
+                        </li>
+                      </ul>
+                      <button
+                        class="btn btn-dark text-white text-uppercase px-4 rounded-0"
+                      >
+                        Book this car now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/car.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="cars-content h-100 py-5">
+                    <div>
+                      <h5
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        Audi 3000 msi
+                        <span class="text-warning"
+                          ><span class="fs-3">$149</span>/day</span
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Adipisci, at! Eligendi in neque sed delectus ab cum
+                        libero itaque.
+                      </p>
+                      <ul class="cars-list list-unstyled">
+                        <li>
+                          <span class="fw-bold">Capacity: </span>04 Person
+                        </li>
+                        <li><span class="fw-bold">Doors: </span>04</li>
+                        <li>
+                          <span class="fw-bold">Air condition: </span>Dual Zone
+                        </li>
+                        <li>
+                          <span class="fw-bold">Transmission: </span>Automatic
+                        </li>
+                      </ul>
+                      <button
+                        class="btn btn-dark text-white text-uppercase px-4 rounded-0"
+                      >
+                        Book this car now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/car.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="cars-content h-100 py-5">
+                    <div>
+                      <h5
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        Audi 3000 msi
+                        <span class="text-warning"
+                          ><span class="fs-3">$149</span>/day</span
+                        >
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Adipisci, at! Eligendi in neque sed delectus ab cum
+                        libero itaque.
+                      </p>
+                      <ul class="cars-list list-unstyled">
+                        <li>
+                          <span class="fw-bold">Capacity: </span>04 Person
+                        </li>
+                        <li><span class="fw-bold">Doors: </span>04</li>
+                        <li>
+                          <span class="fw-bold">Air condition: </span>Dual Zone
+                        </li>
+                        <li>
+                          <span class="fw-bold">Transmission: </span>Automatic
+                        </li>
+                      </ul>
+                      <button
+                        class="btn btn-dark text-white text-uppercase px-4 rounded-0"
+                      >
+                        Book this car now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/car.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators position-static">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Cars -->
+    <!-- Start Teams -->
+    <section id="team">
+      <div class="container">
+        <div class="teams-content text-center text-white">
+          <h2>Experience Great Support</h2>
+          <p class="my-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            blanditiis exercitationem unde necessitatibus itaque provident fuga
+            dolore, inventore, impedit facere iste aut sint rem deserunt
+            veritatis ipsum.
+          </p>
+          <button class="btn btn-outline-warning rounded-0">
+            REACH OUR SUPPORT TEAM
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Teams -->
+    <!-- Start Blog -->
+    <section id="blog">
+      <div class="container">
+        <div class="main-heading text-center mb-5">
+          <h3 class="fw-bold fs-2">Latest From Our Blog</h3>
+          <p class="mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <img
+                src="./images/b1.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body px-0 py-4">
+                <span class="badge bg-dark rounded-0 mb-3 px-4 py-2 fw-normal"
+                  >10 jan 2018</span
+                >
+
+                <h5 class="card-title fw-bold">
+                  Addiction When Gambling Becomes A Problem
+                </h5>
+                <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                <div class="social d-flex justify-content-between">
+                  <p><i class="fa-regular fa-heart"></i> 15 Likes</p>
+                  <p><i class="fa-regular fa-comment"></i> 02 Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <img
+                src="./images/b2.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body px-0 py-4">
+                <span class="badge bg-dark rounded-0 mb-3 px-4 py-2 fw-normal"
+                  >10 jan 2018</span
+                >
+
+                <h5 class="card-title fw-bold">
+                  Addiction When Gambling Becomes A Problem
+                </h5>
+                <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                <div class="social d-flex justify-content-between">
+                  <p><i class="fa-regular fa-heart"></i> 15 Likes</p>
+                  <p><i class="fa-regular fa-comment"></i> 02 Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <img
+                src="./images/b3.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body px-0 py-4">
+                <span class="badge bg-dark rounded-0 mb-3 px-4 py-2 fw-normal"
+                  >10 jan 2018</span
+                >
+
+                <h5 class="card-title fw-bold">
+                  Addiction When Gambling Becomes A Problem
+                </h5>
+                <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                <div class="social d-flex justify-content-between">
+                  <p><i class="fa-regular fa-heart"></i> 15 Likes</p>
+                  <p><i class="fa-regular fa-comment"></i> 02 Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card border-0 rounded-0">
+              <img
+                src="./images/b4.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body px-0 py-4">
+                <span class="badge bg-dark rounded-0 mb-3 px-4 py-2 fw-normal"
+                  >10 jan 2018</span
+                >
+
+                <h5 class="card-title fw-bold">
+                  Addiction When Gambling Becomes A Problem
+                </h5>
+                <p>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                <div class="social d-flex justify-content-between">
+                  <p><i class="fa-regular fa-heart"></i> 15 Likes</p>
+                  <p><i class="fa-regular fa-comment"></i> 02 Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Blog -->
+    <!-- Start Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center text-md-start">
+            <h5 class="text-white">Quick links</h5>
+            <ul class="list-unstyled">
+              <li>Jops</li>
+              <li>Brand assets</li>
+              <li>Investor relations</li>
+              <li>Terms of service</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center text-md-start">
+            <h5 class="text-white">Features</h5>
+            <ul class="list-unstyled">
+              <li>Jops</li>
+              <li>Brand assets</li>
+              <li>Investor relations</li>
+              <li>Terms of service</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center text-md-start">
+            <h5 class="text-white">Resources</h5>
+            <ul class="list-unstyled">
+              <li>Jops</li>
+              <li>Brand assets</li>
+              <li>Investor relations</li>
+              <li>Terms of service</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center text-md-start">
+            <h5 class="text-white">Follow us</h5>
+            <p>Let us be social</p>
+            <div class="links text-white">
+              <i class="pe-2 fa-brands fa-facebook-f"></i>
+              <i class="pe-2 fa-brands fa-twitter"></i>
+              <i class="pe-2 fa-solid fa-globe"></i>
+              <i class="pe-2 fa-brands fa-behance"></i>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-4 text-center text-md-start">
+            <h5 class="text-white">Newsletter</h5>
+            <p>Stay update with our latest</p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control border-0 rounded-0"
+                placeholder="Enter Email"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span
+                class="input-group-text border-0 rounded-0 bg-warning"
+                id="basic-addon2"
+                ><i class="fa-solid fa-arrow-right text-white"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+    <footer>
+      <div class="container text-center p-4">
+        <p class="mb-0">Copyright &copy; 2018 All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
