@@ -1,0 +1,305 @@
+@media screen and (min-width: 1100px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1100px) {
+  .container {
+    max-width: 945px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .flex-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .homeimg {
+    width: 100%;
+  }
+
+  .hometxt {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .homebtn {
+    justify-content: center;
+  }
+
+  .link-1 {
+    border-radius: 50px;
+  }
+
+  .item {
+    width: calc(100% / 2 - 20px);
+  }
+
+  figure {
+    height: 1416px;
+    gap: 4px;
+  }
+
+  picture {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .pizza {
+    order: 1;
+  }
+
+  .levitation {
+    order: 3;
+  }
+
+  .steaks {
+    order: 5;
+  }
+
+  .frittata {
+    order: 2;
+  }
+
+  .burger {
+    order: 2;
+  }
+
+  .fried {
+    order: 6;
+  }
+
+  .kebab {
+    order: 7;
+  }
+
+  .detail {
+    padding: 15px;
+  }
+
+  form .name {
+    flex-direction: column;
+  }
+
+  form .name input {
+    width: 100%;
+  }
+
+  .width {
+    width: calc(100% / 2 - 30px);
+  }
+
+  .width p {
+    font-size: 14px;
+  }
+
+  .foot-subscribe {
+    order: 1;
+    width: 100%;
+  }
+
+  .nav-icons {
+    display: block;
+  }
+
+  .navList {
+    position: absolute;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    gap: 0;
+    transform: translateX(100%);
+  }
+
+  .navList li {
+    padding: 20px 0;
+  }
+
+  body:has(.navList:target) nav {
+    height: 100vh;
+    background-color: #fff9;
+  }
+
+  .navList:target {
+    transform: translateX(0);
+  }
+
+  .nav .navList .close {
+    display: block;
+    text-align: right;
+  }
+
+  .nav .navList .close a {
+    font-size: 25px;
+  }
+
+  .mode {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 660px;
+    padding: 0 10px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  p,
+  a {
+    font-size: 14px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .container {
+    max-width: 554px;
+  }
+
+  .homeimg {
+    width: 100%;
+  }
+
+  .hometxt {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .chefs-content,
+  .gallery-content,
+  .contact-content {
+    padding: 20px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  figure {
+    /* flex-wrap: nowrap; */
+    height: auto;
+  }
+
+  picture {
+    width: 100%;
+  }
+
+  .foot-container {
+    padding: 40px 20px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .foot-subscribe {
+    order: 0;
+  }
+
+  .width {
+    width: 100%;
+  }
+
+  .foot-about .logo span::after {
+    bottom: 2px;
+    right: -8px;
+  }
+  .email-input button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .links-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .email-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .email-input input {
+    width: 100%;
+  }
+  .email-input button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homebtn {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* *************** */
+/* *************** */
+/* Dark */
+/* *************** */
+/* *************** */
+
+body:has(.mode input:checked) .light {
+  display: block;
+}
+
+body:has(.mode input:checked) .dark {
+  display: none;
+}
+
+:root:has(.mode input:checked) {
+  --mainColor: #d78c23;
+  --colorHover: #d78c23;
+  --second-color: #252525;
+  --colorThree: #171717;
+  --mainColor1: #fff;
+  --colorFour: #202020;
+  --white-color: #fff;
+}
+
+body:has(.mode input:checked) .item .chefs-img::after {
+  background-image: url("../imgs/team-shape-dark.svg");
+}
