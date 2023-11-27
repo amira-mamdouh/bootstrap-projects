@@ -1,0 +1,426 @@
+/* general style */
+:root {
+  --main-color: #0078ff;
+}
+
+section {
+  background-color: #f5f5f5;
+}
+
+h2::after {
+  content: "";
+  height: 3px;
+  width: 20%;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.section-heading::after {
+  content: "";
+  height: 6px;
+  width: 4%;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
+
+/* start navbar */
+
+nav .navbar-nav .nav-link.active::after {
+  width: 70%;
+}
+
+nav .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+  width: fit-content;
+}
+
+nav .navbar-nav .nav-link::after,
+nav .p-drop::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s width;
+}
+
+nav .navbar-nav .nav-link:hover::after,
+nav .dropdown:hover::after {
+  width: 70%;
+}
+
+/* start header */
+#home {
+  background-image: url(../imgs/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+.typing::after {
+  content: "  |";
+  font-size: 3rem;
+  color: #fff;
+  animation: typing 8s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+  2% {
+    content: " De|";
+  }
+  4% {
+    content: " Des|";
+  }
+  8% {
+    content: " Desi|";
+  }
+  10% {
+    content: " Desig|";
+  }
+  12% {
+    content: " Design|";
+  }
+  14% {
+    content: " Designe|";
+  }
+  16% {
+    content: " Designer|";
+  }
+  18% {
+    content: " Designe|";
+  }
+  20% {
+    content: " Design|";
+  }
+  22% {
+    content: " Desig|";
+  }
+  24% {
+    content: " Desi|";
+  }
+  26% {
+    content: " Des|";
+  }
+  28% {
+    content: " De|";
+  }
+  30% {
+    content: " D|";
+  }
+  32% {
+    content: " D|";
+  }
+  34% {
+    content: " De|";
+  }
+  36% {
+    content: " Dev|";
+  }
+  38% {
+    content: " Deve|";
+  }
+  40% {
+    content: " Devel|";
+  }
+  42% {
+    content: " Develo|";
+  }
+  44% {
+    content: " Develop|";
+  }
+  46% {
+    content: " Develope|";
+  }
+  48% {
+    content: " Developer|";
+  }
+  50% {
+    content: " Develope|";
+  }
+  52% {
+    content: " Develop|";
+  }
+  54% {
+    content: " Develo|";
+  }
+  56% {
+    content: " Devel|";
+  }
+  58% {
+    content: " Deve|";
+  }
+  60% {
+    content: " Dev|";
+  }
+  62% {
+    content: " De|";
+  }
+  64% {
+    content: " D|";
+  }
+  66% {
+    content: "Fr|";
+  }
+  68% {
+    content: "Fre|";
+  }
+  70% {
+    content: "Free|";
+  }
+  72% {
+    content: "Freel|";
+  }
+  74% {
+    content: "Freela|";
+  }
+  76% {
+    content: "Freelan|";
+  }
+  78% {
+    content: "Freelanc|";
+  }
+  80% {
+    content: "Freelance|";
+  }
+  82% {
+    content: "Freelancer|";
+  }
+  84% {
+    content: "Freelance|";
+  }
+  86% {
+    content: "Freelanc|";
+  }
+  88% {
+    content: "Freelan|";
+  }
+  90% {
+    content: "Freela|";
+  }
+  92% {
+    content: "Freel|";
+  }
+  94% {
+    content: "Free|";
+  }
+  96% {
+    content: "Fre|";
+  }
+  98% {
+    content: "Fr|";
+  }
+  100% {
+    content: "F|";
+  }
+}
+
+/* end header */
+/* start About */
+
+.about .container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+}
+
+.about-img img {
+  border-radius: 5px;
+}
+
+.progress {
+  border-radius: 0;
+  height: 0.7rem;
+}
+/* end About */
+/* start services */
+.services-cards {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.services-icon,
+.counter-icon {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+}
+
+.services-icon {
+  outline: 10px solid var(--main-color);
+}
+
+.services-icon i,
+.counter-icon i {
+  font-size: 2.5rem;
+}
+
+.services-cards:hover .services-icon {
+  outline: 10px solid rgba(0, 119, 255, 0.2);
+  background-color: var(--main-color);
+}
+
+.services-cards:hover .services-icon i {
+  color: #fff;
+}
+
+/* end services */
+/* start counter */
+.counter {
+  background-image: url(../imgs/post-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.counter .layer {
+  background-color: #0078ff;
+  padding: 6rem 0;
+}
+
+.counter-icon {
+  outline: 10px solid #fff;
+}
+/* end counter */
+/* start portfolio */
+.sm-size {
+  font-size: 14px;
+}
+
+.text-custum-color {
+  color: var(--main-color);
+}
+
+.portfolio .card,
+.blog .card {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.portfolio .card .badge {
+  border: 2px solid;
+}
+
+.portfolio .card img {
+  transition: scale 1s;
+}
+
+.portfolio .card:hover img {
+  scale: 1.2;
+}
+/* end portfolio */
+
+/* start carousel*/
+
+.slider {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 95vh;
+}
+
+.slider .layer,
+.contact .layer {
+  background-color: rgba(0, 119, 255, 0.7);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* end carousel */
+/* start blog */
+
+.blog .card-title,
+.card-footer-hoverd {
+  transition: 0.7s all;
+}
+
+.blog .card-title:hover,
+.card-footer-hoverd:hover {
+  color: var(--main-color);
+}
+
+.blog .card .card-footer img {
+  width: 20%;
+}
+
+.blog .card .card-footer span {
+  font-size: 16px;
+}
+/* start blog */
+/* start contact */
+
+.contact {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.contact .layer {
+  padding: 6rem 0 3.5rem;
+}
+
+.contact .container {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.contact .list-group li span i {
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+.fa-facebook-f {
+  padding: 4px;
+}
+
+.contact .list-group-item {
+  border: none;
+  padding: 5px 0px;
+}
+
+.contact-icons span {
+  border-radius: 50%;
+  padding: 10px 12px;
+  margin-right: 8px;
+  outline: 3px solid var(--main-color);
+}
+
+.contact-icons span:hover {
+  background-color: var(--main-color);
+  outline: 3px solid rgba(0, 119, 255, 0.2);
+}
+
+.contact-icons span:hover i {
+  color: #fff;
+}
+
+/* end contact */
+/* start footer */
+
+footer {
+  background-color: #0062d3;
+}
